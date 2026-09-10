@@ -1,8 +1,0 @@
-name: Test Ping
-on:
-  workflow_dispatch:
-jobs:
-  hello-arm:
-    runs-on: windows-11-arm
-    steps:
-      - run: echo "hello from windows arm runner"
