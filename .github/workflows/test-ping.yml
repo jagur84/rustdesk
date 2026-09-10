@@ -2,7 +2,7 @@ name: Test Ping
 on:
   workflow_dispatch:
 jobs:
-  hello:
-    runs-on: ubuntu-latest
+  hello-windows:
+    runs-on: windows-2022
     steps:
-      - run: echo "hello from actions"
+      - run: echo "hello from windows runner"
