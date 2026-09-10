@@ -2,7 +2,6 @@ name: Test Ping
 on:
   workflow_dispatch:
 jobs:
-  hello-windows:
-    runs-on: windows-2022
-    steps:
-      - run: echo "hello from windows runner"
+  call-reusable:
+    uses: ./.github/workflows/test-reusable-called.yml
+    secrets: inherit
